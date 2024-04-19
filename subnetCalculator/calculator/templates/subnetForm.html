@@ -1,0 +1,8 @@
+<h1>Welcome to the simple subnet calculator</h1>
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
